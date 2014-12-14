@@ -4,5 +4,18 @@ length(aux)
 for i=1:length(aux)
     latitud = aux(:,1);
     longitud = aux(:,2);
-    grupo(i) = GROUP_51(latitud(i) == LAT
+    grupo(i) = GROUPS_51(LAT == latitud(i));
+end
+%%
+clear all;
+close all;
+clc
+load mat_fullDistance;
+for i=1:51
+    ident = IDS(GROUPS_51==i);
+    n_GROUP = length(ident);
+    for j=1:n_GROUP
+        output_GROUPS(count
+        nom = NOMBRES(GROUPS_51==i);
+    end
 end
