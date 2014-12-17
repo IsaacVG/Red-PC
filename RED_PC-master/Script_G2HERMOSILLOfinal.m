@@ -46,8 +46,8 @@ concentrators = nodes_HERMOSILLO(concentrador==true);
 
 localindx = 1:length(nodes_HERMOSILLO);
 for i=1:numberOfGroups
-    Dindx = dist_CHTUX(groupindx==i,groupindx==i);
-    Nindx = nodes_CHTUX(groupindx==i);
+    Dindx = dist_HERMOSILLO(groupindx==i,groupindx==i);
+    Nindx = nodes_HERMOSILLO(groupindx==i);
     Cindx = concentrators(i);
     
     Kret = esauWilliams(Dindx, Cindx, Nindx);

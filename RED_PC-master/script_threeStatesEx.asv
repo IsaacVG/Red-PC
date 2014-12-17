@@ -75,11 +75,17 @@ worldmap('Mexico')
 load coast
 plotm(lat,long)
 
+
 title('Division de Mexico en grupos');
 
 for i=1:clusterNumber
     marker = 3;
     colour = 0.8.*[rand(1) rand(1) rand(1)];
+    wid=IDS(GROUPS_51==i);
+    %textm(22.76321,-102.58868,'Prueba')
+    wid(1)
+    textm(LAT(IDS==wid(1)),LON(IDS==wid(1)),...
+        num2str(i));
     h = plotm(LAT(GROUPS_51==i),LON(GROUPS_51==i),...
     'linestyle','o','Color',colour);
     set(h, 'MarkerSize',marker);

@@ -28,13 +28,7 @@ keyILSE = 'AIzaSyDQwzc5u1qv9mbQ3fhZEucOy-mfa00-4WU'
 keySEBAS = 'AIzaSyDauNdiEztxXlGG6-vF0hZfX2joB0VeeS4'
 keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
 
-keys = [#keyJOAN,                
-        keyMARTIN,
-        keyMAYTE,        
-        keyIVI,
-        keyJASL,
-        keyOros,
-        keyISAAC,
+keys = [#keyJOAN,         
         keyANDRE,
         keyFER,
         keyDAISY,
@@ -43,12 +37,23 @@ keys = [#keyJOAN,
         keySEBAS,
         keyILSE,
         keyHUGO,
-        keyDeLINT]
+        keyDeLINT,
+        keyMARTIN,
+        keyMAYTE,
+        keyIVI,
+        keyJASL,
+        keyOros,
+        keyISAAC]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'POZARICA_grupo.csv',
+             'AGUASCALIENTES_grupo.csv',
+             'QUERETARO_grupo.csv',
+             'ECATEPEC_grupo.csv',
+             'TEPIC_grupo.csv',
              'TORREON_grupo.csv',
              'PACHUCA_grupo.csv',
              'TIJUANA_grupo.csv',
@@ -119,6 +124,7 @@ while i < size_Locations:
         print('\n    We got an API error!! Let\'s try another key.')
         j = 0
         keycount = keycount + 1
+        print('\n request number: '+str(i))
         print('     We\'re changing the key to: ')
         print('    '+str(keys[keycount]))
         gmaps=googlemaps.Client(keys[keycount])
@@ -126,6 +132,7 @@ while i < size_Locations:
     except googlemaps.exceptions.Timeout as Timeout:
         print('\n    We got a TIMEOUT!! Let\'s try again.')
         print(Timeout)
+        print('\n request number: '+str(i))
         print(' ')
         
 

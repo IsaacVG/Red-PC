@@ -47,8 +47,8 @@ concentrators = nodes_CULIACAN(concentrador==true);
 
 localindx = 1:length(nodes_CULIACAN);
 for i=1:numberOfGroups
-    Dindx = dist_CHTUX(groupindx==i,groupindx==i);
-    Nindx = nodes_CHTUX(groupindx==i);
+    Dindx = dist_CULIACAN(groupindx==i,groupindx==i);
+    Nindx = nodes_CULIACAN(groupindx==i);
     Cindx = concentrators(i);
     
     Kret = esauWilliams(Dindx, Cindx, Nindx);
