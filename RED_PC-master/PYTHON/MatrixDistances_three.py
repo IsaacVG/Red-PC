@@ -29,10 +29,6 @@ keySEBAS = 'AIzaSyDauNdiEztxXlGG6-vF0hZfX2joB0VeeS4'
 keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
 
 keys = [#keyJOAN,         
-        keyANDRE,
-        keyFER,
-        keyDAISY,
-        keyROD,
         keyDIEGO,
         keySEBAS,
         keyILSE,
@@ -43,12 +39,21 @@ keys = [#keyJOAN,
         keyIVI,
         keyJASL,
         keyOros,
-        keyISAAC]
+        keyISAAC,
+        keyANDRE,
+        keyFER,
+        keyDAISY,
+        keyROD]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'SLP_grupo.csv',
+             'PtoPENASCO_grupo.csv',
+             'ZIHUATANEJO_grupo.csv',
+             'TAPACHULA_grupo.csv',
+             'CdVALLES_grupo.csv',
              'POZARICA_grupo.csv',
              'AGUASCALIENTES_grupo.csv',
              'QUERETARO_grupo.csv',
