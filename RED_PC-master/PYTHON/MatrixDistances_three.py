@@ -27,14 +27,10 @@ keyHUGO = 'AIzaSyB5jEgkRS2u3qpHYcBixo8Zy2siLVVIcWQ'
 keyILSE = 'AIzaSyDQwzc5u1qv9mbQ3fhZEucOy-mfa00-4WU'
 keySEBAS = 'AIzaSyDauNdiEztxXlGG6-vF0hZfX2joB0VeeS4'
 keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
+keyELSA = 'AIzaSyAt8w7wo_QnWJ7OuG39onTUmrYdMWpXJ7I'
+keyJAI = 'AIzaSyB55GKkPPuQfrtXrUm8u7liHE3g8OB4okY'
 
-keys = [#keyJOAN,         
-        keyDIEGO,
-        keySEBAS,
-        keyILSE,
-        keyHUGO,
-        keyDeLINT,
-        keyMARTIN,
+keys = [keyJAI,
         keyMAYTE,
         keyIVI,
         keyJASL,
@@ -43,12 +39,26 @@ keys = [#keyJOAN,
         keyANDRE,
         keyFER,
         keyDAISY,
-        keyROD]
+        keyROD,
+        keyELSA,
+        keyJOAN,
+        keyDIEGO,
+        keySEBAS,
+        keyILSE,
+        keyHUGO,
+        keyDeLINT,
+        keyMARTIN,]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'LEON_grupo.csv',
+             'CancunMerida_grupo.csv',
+             'TOLUCA_grupo.csv',
+             'IZTAPALAPA_grupo.csv',
+             'PINOTEPA_grupo.csv',
+             'VERACRUZ_grupo.csv',
              'SLP_grupo.csv',
              'PtoPENASCO_grupo.csv',
              'ZIHUATANEJO_grupo.csv',
@@ -67,7 +77,6 @@ fileNames = ['Chihuahua_grupo.csv',
              'CULIACAN_grupo.csv',
              'CdOBREGON_grupo.csv',
              'HERMOSILLO_grupo.csv',
-             'CancunMerida_grupo.csv',
              'CiudadesPrincipales_51_grupo.csv',
              'Puebla_grupo.csv',
              'ChiapasTuxtla_grupo.csv']
@@ -102,6 +111,7 @@ print('Read CSV file, about to compute distances')
 
 i = 0
 j = 0
+k = 0
 while i < size_Locations:
     try:
         directions_result = gmaps.directions((Locations['start_lat'][i],
@@ -129,15 +139,23 @@ while i < size_Locations:
         print('\n    We got an API error!! Let\'s try another key.')
         j = 0
         keycount = keycount + 1
+        k = 0
         print('\n request number: '+str(i))
         print('     We\'re changing the key to: ')
         print('    '+str(keys[keycount]))
         gmaps=googlemaps.Client(keys[keycount])
         
     except googlemaps.exceptions.Timeout as Timeout:
+        k = k + 1
         print('\n    We got a TIMEOUT!! Let\'s try again.')
         print(Timeout)
         print('\n request number: '+str(i))
+        if k == 4:
+            k = 0
+            print('     We already did 3 attempts, we\'re changing the key to: ')
+            print('    '+str(keys[keycount]))
+            gmaps=googlemaps.Client(keys[keycount])
+            
         print(' ')
         
 

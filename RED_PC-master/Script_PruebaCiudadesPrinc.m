@@ -6,3 +6,13 @@ for i=1:length(aux)
     longitud = aux(:,2);
     grupo(i) = GROUPS_51(LAT == latitud(i));
 end
+%%
+load mat_fullDistance;
+[aux] = csvread('Ciudades165.csv',1,4);
+length(aux)
+for i=1:length(aux)
+    latitud = aux(:,1);
+    longitud = aux(:,2);
+    grupo(i) = GROUPS_51(LAT == latitud(i));
+    pob(i) = POB(LAT == latitud(i));
+end
