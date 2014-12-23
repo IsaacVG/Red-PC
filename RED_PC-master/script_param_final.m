@@ -28,7 +28,7 @@ k = 4; % Connectivity for Dysart-Georganas
 R = 3; % Redundancy for Steiglitz-Weiner-Kleitman
 minpop = 20000; % min population to be concentrator
 %
-eval(sprintf('POB_ciudad = POB(%s)',nodes_ciudad))
+eval(sprintf('POB_ciudad = POB(%s);',nodes_ciudad))
 
 eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_ciudad,dist_ciudad))
 % force Chiapas/Tuxtla City into the main nodes.
@@ -53,6 +53,8 @@ for i=1:numberOfGroups
     Kret = esauWilliams(Dindx, Cindx, Nindx);
     CM_ciudad(groupindx==i,groupindx==i) = Kret;
 end
+
+       
                
 % FULL CONECTIVITY MATRIX!!
 CM_ciudad(concentrador==true, concentrador==true) = Kc;
@@ -84,8 +86,7 @@ plotm(lat,long)
 
 title(sprintf('Mexico - %s - Grupo %s',ciudad,grupo));
 
-n = length(nodes_ciudad);
-
+eval(sprintf('n = length(%s)',nodes_ciudad))
 for i=1:n
     for j=1:n
         if CM_ciudad(i,j)~=0
