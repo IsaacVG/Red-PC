@@ -30,7 +30,11 @@ keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
 keyELSA = 'AIzaSyAt8w7wo_QnWJ7OuG39onTUmrYdMWpXJ7I'
 keyJAI = 'AIzaSyB55GKkPPuQfrtXrUm8u7liHE3g8OB4okY'
 
-keys = [keyOros,
+keys = [keyJAI,
+        keyMAYTE,
+        keyIVI,
+        keyJASL,
+        keyOros,
         keyISAAC,
         keyANDRE,
         keyFER,
@@ -43,16 +47,22 @@ keys = [keyOros,
         keyILSE,
         keyHUGO,
         keyDeLINT,
-        keyMARTIN,
-        keyJAI,
-        keyMAYTE,
-        keyIVI,
-        keyJASL]
+        keyMARTIN]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'GUADALAJARA_grupo.csv',
+             'NvoLAREDO_grupo.csv',
+             'ACAPULCO_grupo.csv',
+             'MORELIA_grupo.csv',
+             'COATZACOALCOS_grupo.csv',
+             'COLIMA_grupo.csv',
+             'VILLAHERMOSA_grupo.csv',
+             'SALINACRUZ_grupo.csv',
+             'CdVICTORIA_grupo.csv',
+             'MONTERREY_grupo.csv',
              'OAXACA_grupo.csv',
              'DURANGO_grupo.csv',
              'LEON_grupo.csv',
@@ -152,11 +162,16 @@ while i < size_Locations:
         print('\n    We got a TIMEOUT!! Let\'s try again.')
         print(Timeout)
         print('\n request number: '+str(i))
-        if k == 4:
+        if k == 10:
             k = 0
-            print('     We already did 3 attempts, we\'re changing the key to: ')
-            print('    '+str(keys[keycount]))
-            gmaps=googlemaps.Client(keys[keycount])
+            
+            Locations['distance'][i] = 999999
+            print(' We already did 3 attempts, we\'re skipping this one: ')
+            print(Locations['start_lat'][i] + ' ' + Locations['start_lon'][i] + ' --> ' + Locations['finish_lat'][i] + ' ' + Locations['finish_lon'][i])
+            i = i + 1
+            
+            #print('    '+str(keys[keycount]))
+            #gmaps=googlemaps.Client(keys[keycount])
             
         print(' ')
         
