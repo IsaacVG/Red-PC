@@ -1,0 +1,27 @@
+TEHUACAN = [18.461 -97.40762];
+TEHUACAN_group = GROUPS_51(LAT==TEHUACAN(1));
+nodes_TEHUACAN = IDS(GROUPS_51==TEHUACAN_group);
+Lat_TEHUACAN = LAT(GROUPS_51==TEHUACAN_group);
+Lon_TEHUACAN = LON(GROUPS_51==TEHUACAN_group);
+n_TEHUACAN = length(nodes_TEHUACAN);
+output_TEHUACAN = zeros(n_TEHUACAN^2,7);
+
+count=1;
+aux = zeros(n_TEHUACAN^2,1);
+
+for i=1:n_TEHUACAN
+    for j=i:n_TEHUACAN
+        if i~=j
+            output_TEHUACAN(count, :) = ...
+                [nodes_TEHUACAN(i) nodes_TEHUACAN(j)...
+                Lat_TEHUACAN(i) Lon_TEHUACAN(i) ...
+                Lat_TEHUACAN(j) Lon_TEHUACAN(j) 0];
+            aux(count) = 1;
+            count = count+1;
+        end
+    end
+end
+
+output_TEHUACAN = output_TEHUACAN(aux==1,:);
+str = strcat('TEHUACAN_grupo.csv');
+csvwrite(str,output_TEHUACAN);

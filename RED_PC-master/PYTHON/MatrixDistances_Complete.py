@@ -30,11 +30,7 @@ keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
 keyELSA = 'AIzaSyAt8w7wo_QnWJ7OuG39onTUmrYdMWpXJ7I'
 keyJAI = 'AIzaSyB55GKkPPuQfrtXrUm8u7liHE3g8OB4okY'
 
-keys = [keyJAI,
-        keyMAYTE,
-        keyIVI,
-        keyJASL,
-        keyOros,
+keys = [keyOros,
         keyISAAC,
         keyANDRE,
         keyFER,
@@ -47,12 +43,21 @@ keys = [keyJAI,
         keyILSE,
         keyHUGO,
         keyDeLINT,
-        keyMARTIN]
+        keyMARTIN,
+        keyJAI,
+        keyMAYTE,
+        keyIVI,
+        keyJASL]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'CancunMeridaSINIslaMUJERESyCOZUMEL_grupo.csv',
+             'MAZATLAN_grupo.csv',
+             'TEHUACAN_grupo.csv',
+             'ZACATECAS_grupo.csv',
+             'PtoESCONDIDO_grupo.csv',
              'GUADALAJARA_grupo.csv',
              'NvoLAREDO_grupo.csv',
              'ACAPULCO_grupo.csv',
@@ -66,7 +71,6 @@ fileNames = ['Chihuahua_grupo.csv',
              'OAXACA_grupo.csv',
              'DURANGO_grupo.csv',
              'LEON_grupo.csv',
-             'CancunMerida_grupo.csv',
              'TOLUCA_grupo.csv',
              'IZTAPALAPA_grupo.csv',
              'PINOTEPA_grupo.csv',
