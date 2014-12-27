@@ -34,11 +34,17 @@ try:
                                          region = "mx")    
     directions = directions_result[0]['legs'][0]
     distance = directions['distance']['value']/1000
-    steps = directions['steps']
+    #steps = directions_result['steps']
+
+    for step in directions_result['Directions']['Routes'][0]['Steps']:
+        print (step['descriptionHtml'])
 
     print('We didn\'t have an error!!!')
     print('distance = '+str(distance)+' KM')
-    print('Steps = '+str(steps))
+    #print('Steps = '+str(steps))
+    
+	
+    
 
 except googlemaps.exceptions.ApiError as ApiErr:
     print('We got an API error!')

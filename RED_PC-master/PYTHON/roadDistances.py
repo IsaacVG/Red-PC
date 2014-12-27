@@ -10,7 +10,8 @@ import time
 #import matplotlib.pyplot as plt
 
 # Modify with own key
-keyJASL = 'AIzaSyDVWjCMy78Zuk244tB3duLXCK2vSn6NhTQ'
+keyJASL = 'AIzaSyBAWQAnJV_L7vYlzyyKy4H-vmg4tBClCLQ'
+#keyJASL = 'AIzaSyDVWjCMy78Zuk244tB3duLXCK2vSn6NhTQ'
 gmaps = googlemaps.Client(key=keyJASL)
 
 # Testing gmaps.directions

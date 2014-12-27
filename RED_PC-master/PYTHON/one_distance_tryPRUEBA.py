@@ -29,16 +29,11 @@ flat = 20.3641
 flon = -103.8236
 
 try:
-    directions_result = gmaps.directions((stlat,stlon),
-                                         (flat,flon),
-                                         region = "mx")    
-    directions = directions_result[0]['legs'][0]
-    distance = directions['distance']['value']/1000
-    steps = directions['steps']
-
-    print('We didn\'t have an error!!!')
-    print('distance = '+str(distance)+' KM')
-    print('Steps = '+str(steps))
+    directions = gmaps.directions((stlat,stlon),(flat,flon),region = "mx")    
+    print (directions['Directions']['Distance']['meters'])
+    
+	
+    
 
 except googlemaps.exceptions.ApiError as ApiErr:
     print('We got an API error!')
