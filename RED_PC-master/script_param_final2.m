@@ -12,7 +12,7 @@
 clear all
 close all
 clc
-ciudad = 'MERIDACANCUN';
+ciudad = 'MERIDA';
 grupo = '1';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
@@ -26,14 +26,28 @@ load MAT_fullDistance
 % Parameters
 k = 4; % Connectivity for Dysart-Georganas
 R = 3; % Redundancy for Steiglitz-Weiner-Kleitman
-minpop = 20000; % min population to be concentrator
+minpop = 50000; % min population to be concentrator
 %
 eval(sprintf('POB_ciudad = POB(%s);',nodes_ciudad))
 
 eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_ciudad,dist_ciudad))
 % force Chiapas/Tuxtla City into the main nodes.
-eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
 concentrador(POB_ciudad<=minpop) = false;
+eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
+eval(sprintf('concentrador(IDS(%s)==3627) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3351) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3497) = false;',nodes_ciudad))
+
+%Forced IDS
+%MERIDA = 3627, 3351, 3497
+%QUERETARO = 2938
+%CHTUX = 3516
+%AGUASCALIENTES[40000]  = 2985,3429
+%CHIHUAHUA[40000]  = 3647
+%CdVALLES[40000] = 3248
+%TAPACHULA[17000] = 3120
+
+%SLP[50000] = 
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
@@ -57,10 +71,14 @@ end
        
                
 % FULL CONECTIVITY MATRIX!!
-CM_ciudad(concentrador==true, concentrador==true) = Kc;
-nombre_matriz = sprintf('Matriz-%s-G%s.csv',ciudad,grupo);
+nombre_matriz = sprintf('MATRICES/Matriz-%s-G%s.csv',ciudad,grupo);
 eval(sprintf('cell_ciudad  = toCell(NOMBRES(%s), CM_ciudad,nombre_matriz );',nodes_ciudad))
-     
+CM_ciudad(concentrador==true, concentrador==true) = Kc;
+%Concentrators Distance Matrix
+Kc = Kc+Kc';
+nombre_matriz_conc = sprintf('MATRICES/MatrizConc-%s-G%s.csv',ciudad,grupo);
+cell_ciudad_conc  = toCell(NOMBRES(concentrators), Kc ,nombre_matriz_conc );
+
 % Plot
 clc
 % meaningless variables (just to plot pretty)
@@ -114,6 +132,8 @@ end
 %textm(CHTUX(1), CHTUX(2),'Tuxtla Gutierrez');
 offs = -0.001 + (0.002).*rand(size(LATc));
 eval(sprintf('textm(LATc.*(1+offs),LONc, NOMBRES(%s(concentrador==true)));',nodes_ciudad))
+offs = -0.001 + (0.002).*rand(size(LATnc));
+eval(sprintf('textm(LATnc.*(1+offs),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
 
 h = plotm([LATc(nc) LONc(nc); LATc(1) LONc(1)],...
            '*-','Color','m');
@@ -125,3 +145,5 @@ set(h, 'MarkerSize',marker);
 
 eval(sprintf('h = plotm(%s,''linestyle'',''o'',''Color'',''k'');',ciudad))
 set(h, 'MarkerSize',bigmarker);
+
+saveas(figure(5),sprintf('FIGS/FIG-%s-G%s',ciudad,grupo),'fig');
