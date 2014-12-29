@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'MERIDA';
-grupo = '1';
+ciudad = 'TOLUCA';
+grupo = '27';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -34,20 +34,23 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3627) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3351) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3497) = false;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==1590) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3116) = true;',nodes_ciudad))
+% eval(sprintf('concentrador(IDS(%s)==3340) = false;',nodes_ciudad))
 
 %Forced IDS
-%MERIDA = 3627, 3351, 3497
+%MERIDA[50000] = 3627, 3351, 3497
 %QUERETARO = 2938
 %CHTUX = 3516
 %AGUASCALIENTES[40000]  = 2985,3429
 %CHIHUAHUA[40000]  = 3647
 %CdVALLES[40000] = 3248
 %TAPACHULA[17000] = 3120
-
-%SLP[50000] = 
+%VERACRUZ[50000] = 2594
+%PINOTEPA[50000] = 918,2800
+%POZARICA[50000] = 3395
+%IZTAPALAPA[700000] sin off en mapa = 3525, 3379
+%TOLUCA[] = 
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
@@ -131,9 +134,9 @@ end
 
 %textm(CHTUX(1), CHTUX(2),'Tuxtla Gutierrez');
 offs = -0.001 + (0.002).*rand(size(LATc));
-eval(sprintf('textm(LATc.*(1+offs),LONc, NOMBRES(%s(concentrador==true)));',nodes_ciudad))
-offs = -0.001 + (0.002).*rand(size(LATnc));
-eval(sprintf('textm(LATnc.*(1+offs),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
+eval(sprintf('textm(LATc.*(1),LONc, NOMBRES(%s(concentrador==true)));',nodes_ciudad))
+% offs = -0.001 + (0.002).*rand(size(LATnc));
+% eval(sprintf('textm(LATnc.*(1),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
 
 h = plotm([LATc(nc) LONc(nc); LATc(1) LONc(1)],...
            '*-','Color','m');

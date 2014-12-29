@@ -1,2 +1,4 @@
-LOCALIDADES,Veracruz, 
-Veracruz,0, 
+LOCALIDADES,Piedras Negras,Coatepec,Veracruz, 
+Piedras Negras,0,161.031,55.823, 
+Coatepec,161.031,0,119.716, 
+Veracruz,55.823,119.716,0, 
