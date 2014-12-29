@@ -29,4 +29,4 @@ CANCUN = [21.1214 -86.85588];
 
 clear count i j;
 
-save MAT_MERIDACANCUN
+save MAT_MERIDA
