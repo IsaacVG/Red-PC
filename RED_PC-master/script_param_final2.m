@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'TOLUCA';
-grupo = '27';
+ciudad = 'LEON';
+grupo = '28';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -34,8 +34,8 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==1590) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3116) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3491) = false;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==3116) = true;',nodes_ciudad))
 % eval(sprintf('concentrador(IDS(%s)==3340) = false;',nodes_ciudad))
 
 %Forced IDS
@@ -50,7 +50,8 @@ eval(sprintf('concentrador(IDS(%s)==3116) = true;',nodes_ciudad))
 %PINOTEPA[50000] = 918,2800
 %POZARICA[50000] = 3395
 %IZTAPALAPA[700000] sin off en mapa = 3525, 3379
-%TOLUCA[] = 
+%TOLUCA[50000] sin off en mapa = 3116, 1590
+%LEON[50000] = 3491
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
@@ -135,8 +136,8 @@ end
 %textm(CHTUX(1), CHTUX(2),'Tuxtla Gutierrez');
 offs = -0.001 + (0.002).*rand(size(LATc));
 eval(sprintf('textm(LATc.*(1),LONc, NOMBRES(%s(concentrador==true)));',nodes_ciudad))
-% offs = -0.001 + (0.002).*rand(size(LATnc));
-% eval(sprintf('textm(LATnc.*(1),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
+offs = -0.001 + (0.002).*rand(size(LATnc));
+eval(sprintf('textm(LATnc.*(1),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
 
 h = plotm([LATc(nc) LONc(nc); LATc(1) LONc(1)],...
            '*-','Color','m');
