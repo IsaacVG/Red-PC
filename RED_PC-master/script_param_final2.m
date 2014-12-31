@@ -35,23 +35,24 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
 eval(sprintf('concentrador(IDS(%s)==3491) = false;',nodes_ciudad))
-%eval(sprintf('concentrador(IDS(%s)==3116) = true;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==1590) = true;',nodes_ciudad))
 % eval(sprintf('concentrador(IDS(%s)==3340) = false;',nodes_ciudad))
 
 %Forced IDS
 %MERIDA[50000] = 3627, 3351, 3497
-%QUERETARO = 2938
-%CHTUX = 3516
+%QUERETARO[100000] = 2938
+%CHTUX[50000] = 3516
 %AGUASCALIENTES[40000]  = 2985,3429
 %CHIHUAHUA[40000]  = 3647
 %CdVALLES[40000] = 3248
 %TAPACHULA[17000] = 3120
+%SLP[17000] = false 3577, 3342
 %VERACRUZ[50000] = 2594
 %PINOTEPA[50000] = 918,2800
 %POZARICA[50000] = 3395
 %IZTAPALAPA[700000] sin off en mapa = 3525, 3379
 %TOLUCA[50000] sin off en mapa = 3116, 1590
-%LEON[50000] = 3491
+%LEON[50000] = false 3491
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %

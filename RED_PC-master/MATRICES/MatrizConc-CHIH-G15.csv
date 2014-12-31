@@ -1,2 +1,4 @@
-LOCALIDADES,Jurez, 
-Jurez,0, 
+LOCALIDADES,Delicias,Chihuahua,Jurez, 
+Delicias,0,97.55,446.297, 
+Chihuahua,97.55,0,350.672, 
+Jurez,446.297,350.672,0, 
