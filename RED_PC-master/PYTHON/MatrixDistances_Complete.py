@@ -30,12 +30,7 @@ keyDIEGO = 'AIzaSyDxud7UtMczI3RDzQ4S4TbQqYRUth4xD8k'
 keyELSA = 'AIzaSyAt8w7wo_QnWJ7OuG39onTUmrYdMWpXJ7I'
 keyJAI = 'AIzaSyB55GKkPPuQfrtXrUm8u7liHE3g8OB4okY'
 
-keys = [keyOros,
-        keyISAAC,
-        keyANDRE,
-        keyFER,
-        keyDAISY,
-        keyROD,
+keys = [keyROD,
         keyELSA,
         keyJOAN,
         keyDIEGO,
@@ -47,12 +42,21 @@ keys = [keyOros,
         keyJAI,
         keyMAYTE,
         keyIVI,
-        keyJASL]
+        keyJASL,
+        keyOros,
+        keyISAAC,
+        keyANDRE,
+        keyFER,
+        keyDAISY]
 
 keycount = 0
 gmaps = googlemaps.Client(key=keys[keycount])
 
 fileNames = ['Chihuahua_grupo.csv',
+             'HUAJUAPAN_grupo.csv',
+             'CdCARMEN_grupo.csv',
+             'APATZINGAN_grupo.csv',
+             'TEJUPILCO_grupo.csv',
              'CancunMeridaSINIslaMUJERESyCOZUMEL_grupo.csv',
              'MAZATLAN_grupo.csv',
              'TEHUACAN_grupo.csv',
@@ -147,6 +151,7 @@ while i < size_Locations:
             print('    '+str(keys[keycount]))
             print('     We\'re getting there!')
             gmaps=googlemaps.Client(keys[keycount])
+            k = 0
 
         i = i + 1
         j = j + 1
@@ -171,7 +176,8 @@ while i < size_Locations:
             
             Locations['distance'][i] = 999999
             print(' We already did 3 attempts, we\'re skipping this one: ')
-            print(Locations['start_lat'][i] + ' ' + Locations['start_lon'][i] + ' --> ' + Locations['finish_lat'][i] + ' ' + Locations['finish_lon'][i])
+            print(i)
+            #print(Locations['start_lat'][i] + ' ' + Locations['start_lon'][i] + ' --> ' + Locations['finish_lat'][i] + ' ' + Locations['finish_lon'][i])
             i = i + 1
             
             #print('    '+str(keys[keycount]))

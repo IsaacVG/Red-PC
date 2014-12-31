@@ -1,0 +1,31 @@
+clear all
+close all
+clc
+
+cd ./PYTHON/
+
+CSV_MONTERREY = csvread('Distance_MONTERREY_grupo.csv',0,1);
+
+cd ..
+%
+nodes_MONTERREY = unique([CSV_MONTERREY(:,1);CSV_MONTERREY(:,2)]);
+n_MONTERREY = length(nodes_MONTERREY);
+dist_MONTERREY = zeros(n_MONTERREY);
+
+count = 1;
+
+for i=1:n_MONTERREY
+    for j=i:n_MONTERREY
+        if i~=j
+            dist_MONTERREY(i,j) = CSV_MONTERREY(count,7);
+            count=count+1;
+        end
+    end
+end
+dist_MONTERREY = dist_MONTERREY + dist_MONTERREY';
+
+MONTERREY = [25.6488 -100.3031];
+
+clear count i j;
+
+save MAT_MONTERREY
