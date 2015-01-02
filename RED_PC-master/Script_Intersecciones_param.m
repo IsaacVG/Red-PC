@@ -2,8 +2,8 @@ clear all
 close all
 clc
 
-ciudad = 'LEON';
-grupo = '28';
+ciudad = 'SALINACRUZ';
+grupo = '34';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);

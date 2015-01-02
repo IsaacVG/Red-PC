@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'LEON';
-grupo = '28';
+ciudad = 'HUAJUAPAN';
+grupo = '35';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -26,7 +26,7 @@ load MAT_fullDistance
 % Parameters
 k = 4; % Connectivity for Dysart-Georganas
 R = 3; % Redundancy for Steiglitz-Weiner-Kleitman
-minpop = 50000; % min population to be concentrator
+minpop = 600000; % min population to be concentrator
 %
 eval(sprintf('POB_ciudad = POB(%s);',nodes_ciudad))
 
@@ -34,18 +34,20 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3491) = false;',nodes_ciudad))
-%eval(sprintf('concentrador(IDS(%s)==1590) = true;',nodes_ciudad))
-% eval(sprintf('concentrador(IDS(%s)==3340) = false;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3148) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==2442) = true;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==3470) = true;',nodes_ciudad))
 
 %Forced IDS
 %MERIDA[50000] = 3627, 3351, 3497
 %QUERETARO[100000] = 2938
+%ECATEPEC[700000] = 3613, 3416
 %CHTUX[50000] = 3516
 %AGUASCALIENTES[40000]  = 2985,3429
 %CHIHUAHUA[40000]  = 3647
 %CdVALLES[40000] = 3248
 %TAPACHULA[17000] = 3120
+%TEJUPILCO[50000] = -
 %SLP[17000] = false 3577, 3342
 %VERACRUZ[50000] = 2594
 %PINOTEPA[50000] = 918,2800
@@ -53,6 +55,12 @@ eval(sprintf('concentrador(IDS(%s)==3491) = false;',nodes_ciudad))
 %IZTAPALAPA[700000] sin off en mapa = 3525, 3379
 %TOLUCA[50000] sin off en mapa = 3116, 1590
 %LEON[50000] = false 3491
+%DURANGO[50000] = -
+%OAXACA[50000] = 2964, 3023
+%MONTERREY[600000] = 3621, 3612, 3470
+%CdVICTORIA[600000] = 3506, 3587
+%CdCARMEN[600000] = 3345, 3411 
+%SALINACRUZ[600000] = 3148, 2442
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
