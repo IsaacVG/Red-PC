@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'MORELIA';
-grupo = '39';
+ciudad = 'ZAMORA';
+grupo = '40';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -34,9 +34,9 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3437) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3521) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3527) = false;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3502) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3503) = true;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==3527) = false;',nodes_ciudad))
 %eval(sprintf('concentrador(IDS(%s)==3468) = true;',nodes_ciudad))
 
 %Forced IDS
@@ -66,6 +66,8 @@ eval(sprintf('concentrador(IDS(%s)==3527) = false;',nodes_ciudad))
 %VILLAHERMOSA[20000] = 3512, false 3195
 %COLIMA[100000] = 3517, 3422, false 3531
 %COATZACOALCOS[100000] = 3437, 3521, false 3527
+%MORELIA[100000] = 3444
+%ZAMORA[100000] = 3502, 3503
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
