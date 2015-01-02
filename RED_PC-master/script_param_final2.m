@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'HUAJUAPAN';
-grupo = '35';
+ciudad = 'MORELIA';
+grupo = '39';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -26,7 +26,7 @@ load MAT_fullDistance
 % Parameters
 k = 4; % Connectivity for Dysart-Georganas
 R = 3; % Redundancy for Steiglitz-Weiner-Kleitman
-minpop = 600000; % min population to be concentrator
+minpop = 100000; % min population to be concentrator
 %
 eval(sprintf('POB_ciudad = POB(%s);',nodes_ciudad))
 
@@ -34,9 +34,10 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3148) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==2442) = true;',nodes_ciudad))
-%eval(sprintf('concentrador(IDS(%s)==3470) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3437) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3521) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3527) = false;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==3468) = true;',nodes_ciudad))
 
 %Forced IDS
 %MERIDA[50000] = 3627, 3351, 3497
@@ -61,6 +62,10 @@ eval(sprintf('concentrador(IDS(%s)==2442) = true;',nodes_ciudad))
 %CdVICTORIA[600000] = 3506, 3587
 %CdCARMEN[600000] = 3345, 3411 
 %SALINACRUZ[600000] = 3148, 2442
+%HUAJUAPAN[600000] = 3234, 3297
+%VILLAHERMOSA[20000] = 3512, false 3195
+%COLIMA[100000] = 3517, 3422, false 3531
+%COATZACOALCOS[100000] = 3437, 3521, false 3527
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
