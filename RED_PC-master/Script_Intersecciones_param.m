@@ -2,8 +2,8 @@ clear all
 close all
 clc
 
-ciudad = 'MAZATLAN';
-grupo = '51';
+ciudad = 'TEHUACAN';
+grupo = '50';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -41,3 +41,4 @@ for i=1:n_MATRIZ
     end
 end
 save(sprintf('MATRICES/MATdif_%s-G%s.mat',ciudad,grupo),'dif_MATRIZ');
+save(sprintf('MATRICES/MATdif_%s-G%s.csv',ciudad,grupo),'dif_MATRIZ');
