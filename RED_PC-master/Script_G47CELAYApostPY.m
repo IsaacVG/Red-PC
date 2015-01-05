@@ -1,0 +1,31 @@
+clear all
+close all
+clc
+
+cd ./PYTHON/
+
+CSV_CELAYA = csvread('Distance_CELAYA_grupo.csv',0,1);
+
+cd ..
+%
+nodes_CELAYA = unique([CSV_CELAYA(:,1);CSV_CELAYA(:,2)]);
+n_CELAYA = length(nodes_CELAYA);
+dist_CELAYA = zeros(n_CELAYA);
+
+count = 1;
+
+for i=1:n_CELAYA
+    for j=i:n_CELAYA
+        if i~=j
+            dist_CELAYA(i,j) = CSV_CELAYA(count,7);
+            count=count+1;
+        end
+    end
+end
+dist_CELAYA = dist_CELAYA + dist_CELAYA';
+
+CELAYA = [20.52855 -100.81709];
+
+clear count i j;
+
+save MAT_CELAYA
