@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'TEHUACAN';
-grupo = '50';
+ciudad = 'CULIACAN';
+grupo = '4';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -34,15 +34,16 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3426) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3471) = true;',nodes_ciudad))
 %eval(sprintf('concentrador(IDS(%s)==3359) = true;',nodes_ciudad))
 %eval(sprintf('concentrador(IDS(%s)==3463) = false;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3535) = false;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==3535) = false;',nodes_ciudad))
 
 %Forced IDS
 %MERIDA[50000] = 3627, 3351, 3497
 %QUERETARO[100000] = 2938
 %ECATEPEC[700000] = 3613, 3416
+%CULIACAN[100000] = 3471
 %CHTUX[50000] = 3516
 %AGUASCALIENTES[40000]  = 2985,3429
 %CHIHUAHUA[40000]  = 3647

@@ -2,8 +2,8 @@ clear all
 close all
 clc
 
-ciudad = 'MAZATLAN';
-grupo = '51';
+ciudad = 'CULIACAN';
+grupo = '4';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -43,5 +43,5 @@ end
 nombre_arch = sprintf('MATRICES/MatricesDiff/MatrizDiff-%s-G%s.csv', ciudad, grupo);
 
 save(sprintf('MATRICES/MatricesDiff/MATdif_%s-G%s.mat',ciudad,grupo),'dif_MATRIZ');
-load(sprintf('MATRICES/MATdif_%s-G%s.mat',ciudad,grupo));
+load(sprintf('MATRICES/MatricesDiff/MATdif_%s-G%s.mat',ciudad,grupo));
 csvwrite(nombre_arch,dif_MATRIZ);
