@@ -12,8 +12,8 @@
 clear all
 close all
 clc
-ciudad = 'MAZATLAN';
-grupo = '51';
+ciudad = 'TEHUACAN';
+grupo = '50';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
