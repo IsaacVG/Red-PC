@@ -1,4 +1,9 @@
-LOCALIDADES,Magdalena de Kino,Heroica Caborca,Hermosillo, 
-Magdalena de Kino,0,125.455,193.492, 
-Heroica Caborca,125.455,0,282.01, 
-Hermosillo,193.492,282.01,0, 
+LOCALIDADES,Magdalena de Kino,Heroica Caborca,Hermosillo, ,,,,
+Magdalena de Kino,0,125.455,193.492, ,,,,
+Heroica Caborca,125.455,0,282.01, ,,,,
+Hermosillo,193.492,282.01,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Magdalena de Kino,Heroica Caborca,Hermosillo,,LOCALIDADES,Magdalena de Kino,Heroica Caborca,Hermosillo
+Magdalena de Kino,0,75.306,86.52,,Magdalena de Kino,0,Santa Ana-Altar,Carbó-Benjamín Hill
+Heroica Caborca,75.306,0,0,,Heroica Caborca,Santa Ana-Altar,0,Los kilómetros necesarios se cubren con las otras dos conexiones
+Hermosillo,86.52,0,0,,Hermosillo,Carbó-Benjamín Hill,Los kilómetros necesarios se cubren con las otras dos conexiones,0

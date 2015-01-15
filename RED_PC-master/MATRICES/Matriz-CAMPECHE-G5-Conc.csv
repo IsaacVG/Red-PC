@@ -1,4 +1,9 @@
-LOCALIDADES,Champotn,Chetumal,San Francisco de Campeche, 
-Champotn,0,354.907,63.903, 
-Chetumal,354.907,0,418.906, 
-San Francisco de Campeche,63.903,418.906,0, 
+LOCALIDADES,Champotn,Chetumal,San Francisco de Campeche, ,,,,
+Champotn,0,354.907,63.903, ,,,,
+Chetumal,354.907,0,418.906, ,,,,
+San Francisco de Campeche,63.903,418.906,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Champotn,Chetumal,San Francisco de Campeche,,LOCALIDADES,Champotn,Chetumal,San Francisco de Campeche
+Champotn,0,153.542,13.416,,Champotn,0,Escárcega-Xpujil,Seybaplaya-Villa Madero
+Chetumal,153.542,0,276.52,,Chetumal,Escárcega-Xpujil,0,Vicente Guerrero-Bacalar
+San Francisco de Campeche,13.416,276.52,0,,San Francisco de Campeche,Seybaplaya-Villa Madero,Vicente Guerrero-Bacalar,0

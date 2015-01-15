@@ -1,4 +1,9 @@
-LOCALIDADES,Cadereyta de Montes,San Juan del Ro,Santiago de Quertaro, 
-Cadereyta de Montes,0,46.465,76.052, 
-San Juan del Ro,46.465,0,61.329, 
-Santiago de Quertaro,76.052,61.329,0, 
+LOCALIDADES,Cadereyta de Montes,San Juan del Ro,Santiago de Quertaro, ,,,,
+Cadereyta de Montes,0,46.465,76.052, ,,,,
+San Juan del Ro,46.465,0,61.329, ,,,,
+Santiago de Quertaro,76.052,61.329,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Cadereyta de Montes,San Juan del Ro,Santiago de Quertaro,,LOCALIDADES,Cadereyta de Montes,San Juan del Ro,Santiago de Quertaro
+Cadereyta de Montes,0,18.188,32.084,,Cadereyta de Montes,0,Tequisquiapan-Ezequiel Montes,Esperanza-Ajuchitlán
+San Juan del Ro,18.188,0,3.719,,San Juan del Ro,Tequisquiapan-Ezequiel Montes,0,Ajuchitlancito-La Venta de Ajuchitlancito
+Santiago de Quertaro,32.084,3.719,0,,Santiago de Quertaro,Esperanza-Ajuchitlán,Ajuchitlancito-La Venta de Ajuchitlancito,0

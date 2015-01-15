@@ -1,4 +1,9 @@
-LOCALIDADES,Ensenada,Mexicali,Tijuana, 
-Ensenada,0,248.572,105.902, 
-Mexicali,248.572,0,169.19, 
-Tijuana,105.902,169.19,0, 
+LOCALIDADES,Ensenada,Mexicali,Tijuana, ,,,,
+Ensenada,0,248.572,105.902, ,,,,
+Mexicali,248.572,0,169.19, ,,,,
+Tijuana,105.902,169.19,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Ensenada,Mexicali,Tijuana,,LOCALIDADES,Ensenada,Mexicali,Tijuana
+Ensenada,0,193.66,54.22,,Ensenada,0,Francisco Zarco-Progreso,Primo Tapia-El Sauzal
+Mexicali,193.66,0,86.718,,Mexicali,Francisco Zarco-Progreso,0,Cereso del Hongo-Progreso
+Tijuana,54.22,86.718,0,,Tijuana,Primo Tapia-El Sauzal,Cereso del Hongo-Progreso,0

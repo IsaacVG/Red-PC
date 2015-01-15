@@ -1,4 +1,9 @@
-LOCALIDADES,Tuxpan,Puerto Vallarta,Tepic, 
-Tuxpan,0,240.289,77.902, 
-Puerto Vallarta,240.289,0,166.67, 
-Tepic,77.902,166.67,0, 
+LOCALIDADES,Tuxpan,Puerto Vallarta,Tepic, ,,,,
+Tuxpan,0,240.289,77.902, ,,,,
+Puerto Vallarta,240.289,0,166.67, ,,,,
+Tepic,77.902,166.67,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Tuxpan,Puerto Vallarta,Tepic,,LOCALIDADES,Tuxpan,Puerto Vallarta,Tepic
+Tuxpan,0,0,18.108,,Tuxpan,0,La conexión ya fue hecha por las otras conexiones,San Blas-Guadalupe Victoria
+Puerto Vallarta,0,0,20.753,,Puerto Vallarta,La conexión ya fue hecha por las otras conexiones,0,Las Varas-La Peñita de Jaltemba
+Tepic,18.108,20.753,0,,Tepic,San Blas-Guadalupe Victoria,Las Varas-La Peñita de Jaltemba,0

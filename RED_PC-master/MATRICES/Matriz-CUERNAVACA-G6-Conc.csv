@@ -1,4 +1,9 @@
-LOCALIDADES,Izcar de Matamoros,Iguala de la Independencia,Cuernavaca, 
-Izcar de Matamoros,0,219.616,113.387, 
-Iguala de la Independencia,219.616,0,100.92, 
-Cuernavaca,113.387,100.92,0, 
+LOCALIDADES,Izcar de Matamoros,Iguala de la Independencia,Cuernavaca, ,,,,
+Izcar de Matamoros,0,219.616,113.387, ,,,,
+Iguala de la Independencia,219.616,0,100.92, ,,,,
+Cuernavaca,113.387,100.92,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Izcar de Matamoros,Iguala de la Independencia,Cuernavaca,,LOCALIDADES,Izcar de Matamoros,Iguala de la Independencia,Cuernavaca
+Izcar de Matamoros,0,57.338,6.602,,Izcar de Matamoros,0,Copalillo-Jolalpan,Jumiltepec-Ocuituco
+Iguala de la Independencia,57.338,0,6.5,,Iguala de la Independencia,Copalillo-Jolalpan,0,Acamixtla-Acuitlapan
+Cuernavaca,6.602,6.5,0,,Cuernavaca,Jumiltepec-Ocuituco,Acamixtla-Acuitlapan,0

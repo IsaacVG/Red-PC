@@ -1,4 +1,9 @@
-LOCALIDADES,Guamchil,Los Mochis,Culiacn Rosales, 
-Guamchil,0,104.473,105.961, 
-Los Mochis,104.473,0,210.371, 
-Culiacn Rosales,105.961,210.371,0, 
+LOCALIDADES,Guamchil,Los Mochis,Culiacn Rosales, ,,,,
+Guamchil,0,104.473,105.961, ,,,,
+Los Mochis,104.473,0,210.371, ,,,,
+Culiacn Rosales,105.961,210.371,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Guamchil,Los Mochis,Culiacn Rosales,,LOCALIDADES,Guamchil,Los Mochis,Culiacn Rosales
+Guamchil,0,21.001,22.413,,Guamchil,0,Gabriel Leyva Solano-Guasave,Colonia Independencia-Juan Aldama
+Los Mochis,21.001,0,0,,Los Mochis,Gabriel Leyva Solano-Guasave,0,La conexión está cubierta por las otras dos conexiones
+Culiacn Rosales,22.413,0,0,,Culiacn Rosales,Colonia Independencia-Juan Aldama,La conexión está cubierta por las otras dos conexiones,0

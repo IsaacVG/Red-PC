@@ -1,4 +1,9 @@
-LOCALIDADES,Tizayuca,Cuautitln Izcalli,Ecatepec de Morelos, 
-Tizayuca,0,63.359,36.013, 
-Cuautitln Izcalli,63.359,0,39.067, 
-Ecatepec de Morelos,36.013,39.067,0, 
+LOCALIDADES,Tizayuca,Cuautitln Izcalli,Ecatepec de Morelos, ,,,,
+Tizayuca,0,63.359,36.013, ,,,,
+Cuautitln Izcalli,63.359,0,39.067, ,,,,
+Ecatepec de Morelos,36.013,39.067,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Tizayuca,Cuautitln Izcalli,Ecatepec de Morelos,,LOCALIDADES,Tizayuca,Cuautitln Izcalli,Ecatepec de Morelos
+Tizayuca,0,2.506,6.164,,Tizayuca,0,Huehuetoca-San Bartolo,Prados San Francisco-Santa Ana Nextlalpan
+Cuautitln Izcalli,2.506,0,7.945,,Cuautitln Izcalli,Huehuetoca-San Bartolo,0,Colonia 2 de Septiembre-Prados San Francisco
+Ecatepec de Morelos,6.164,7.945,0,,Ecatepec de Morelos,Prados San Francisco-Santa Ana Nextlalpan,Colonia 2 de Septiembre-Prados San Francisco,0

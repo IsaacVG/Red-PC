@@ -1,4 +1,9 @@
-LOCALIDADES,Ticul,Cancn,Mrida, 
-Ticul,0,365.155,83.827, 
-Cancn,365.155,0,309.363, 
-Mrida,83.827,309.363,0, 
+LOCALIDADES,Ticul,Cancn,Mrida, ,,,,
+Ticul,0,365.155,83.827, ,,,,
+Cancn,365.155,0,309.363, ,,,,
+Mrida,83.827,309.363,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Ticul,Cancn,Mrida,,LOCALIDADES,Ticul,Cancn,Mrida
+Ticul,0,8.444,26.426,,Ticul,0,Tekom-Tixcacalcupul,Chocholá-Maxanu
+Cancn,8.444,0,14.017,,Cancn,Tekom-Tixcacalcupul,0,Calotmul-Tizimil
+Mrida,26.426,14.017,0,,Mrida,Chocholá-Maxanu,Calotmul-Tizimil,0
