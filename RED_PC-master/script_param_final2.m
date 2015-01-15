@@ -9,11 +9,12 @@
 % - Plot of group, with connected concentrators.
 % 
 
+
 clear all
 close all
 clc
-ciudad = 'HERMOSILLO';
-grupo = '2';
+ciudad = 'COLIMA';
+grupo = '37';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
@@ -26,7 +27,7 @@ load MAT_fullDistance
 % Parameters
 k = 4; % Connectivity for Dysart-Georganas
 R = 3; % Redundancy for Steiglitz-Weiner-Kleitman
-minpop = 700000; % min population to be concentrator
+minpop = 100000; % min population to be concentrator
 %
 eval(sprintf('POB_ciudad = POB(%s);',nodes_ciudad))
 
@@ -34,24 +35,32 @@ eval(sprintf('[nodos concentrador v freqs] = dysartGeorganas(4, %s, %s);',nodes_
 % force Chiapas/Tuxtla City into the main nodes.
 concentrador(POB_ciudad<=minpop) = false;
 eval(sprintf('concentrador(LAT(%s)==%s(1)) = true;',nodes_ciudad,ciudad))
-eval(sprintf('concentrador(IDS(%s)==3285) = true;',nodes_ciudad))
-eval(sprintf('concentrador(IDS(%s)==3462) = true;',nodes_ciudad))
-%eval(sprintf('concentrador(IDS(%s)==3463) = false;',nodes_ciudad))
-%eval(sprintf('concentrador(IDS(%s)==3535) = false;',nodes_ciudad))
+%eval(sprintf('concentrador(IDS(%s)==%s) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3517) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3422) = true;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3531) = false;',nodes_ciudad))
+eval(sprintf('concentrador(IDS(%s)==3527) = false;',nodes_ciudad))
 
 %Forced IDS
-%MERIDA[50000] = 3627, 3351, 3497
+%MERIDA[50000] = 3627, 3351, false 3497
 %HERMOSILLO[700000] = 3285, 3462
-%QUERETARO[100000] = 2938
-%ECATEPEC[700000] = 3613, 3416
+%CdOBREGON[100000] =  3529,  3528
 %CULIACAN[100000] = 3471
+%CAMPECHE[100000] = 3334
+%CUERNAVACA[100000] = 3412
+%TIJUANA[100000] = 3632
+%PACHUCA[100000] = 3310
+%TORREON[100000] = FALSE 3581, 3443
+%TEPIC[100000] = 3190
+%ECATEPEC[700000] = 3613, 3416
+%QUERETARO[100000] = 2938
 %CHTUX[50000] = 3516
 %AGUASCALIENTES[40000]  = 2985,3429
 %CHIHUAHUA[40000]  = 3647
 %CdVALLES[40000] = 3248
 %TAPACHULA[17000] = 3120
-%TEJUPILCO[50000] = -
-%SLP[17000] = false 3577, 3342
+%TEJUPILCO, APATZINGAN, ZIHUATANEJO, PtoPENASCO[50000] = -
+%SLP[17000] = false 3577, false 3342
 %VERACRUZ[50000] = 2594
 %PINOTEPA[50000] = 918,2800
 %POZARICA[50000] = 3395
@@ -84,8 +93,7 @@ eval(sprintf('concentrador(IDS(%s)==3462) = true;',nodes_ciudad))
 
 eval(sprintf('Dc = %s(concentrador==true,concentrador==true);',dist_ciudad))
 %
-eval(sprintf('[Kc, totDist, defi, permi] = steiglitzWeinerKleitman1(Dc, concentrador,%s, 2, 100);',nodes_ciudad))
-                        
+eval(sprintf('[Kc, totDist, defi, permi] = steiglitzWeinerKleitman1(Dc, concentrador,%s, 2, 100);',nodes_ciudad))                       
                         
 eval(sprintf('[groupindx, numberOfGroups] = buildSubgroups(concentrador,%s,%s);',nodes_ciudad,dist_ciudad))
 eval(sprintf('CM_ciudad = zeros(size(%s));',dist_ciudad)) %full conectivity matrix.
@@ -165,8 +173,8 @@ end
 %textm(CHTUX(1), CHTUX(2),'Tuxtla Gutierrez');
 offs = -0.001 + (0.002).*rand(size(LATc));
 eval(sprintf('textm(LATc.*(1),LONc, NOMBRES(%s(concentrador==true)));',nodes_ciudad))
-offs = -0.001 + (0.002).*rand(size(LATnc));
-eval(sprintf('textm(LATnc.*(1),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
+% offs = -0.001 + (0.002).*rand(size(LATnc));
+% eval(sprintf('textm(LATnc.*(1),LONnc, NOMBRES(%s(concentrador==false)));',nodes_ciudad))
 
 h = plotm([LATc(nc) LONc(nc); LATc(1) LONc(1)],...
            '*-','Color','m');
@@ -180,3 +188,4 @@ eval(sprintf('h = plotm(%s,''linestyle'',''o'',''Color'',''k'');',ciudad))
 set(h, 'MarkerSize',bigmarker);
 
 saveas(figure(5),sprintf('FIGS/FIG-%s-G%s',ciudad,grupo),'fig');
+%saveas(figure(5),sprintf('FIGS/FIGSSIN/FIGSSinNombres-%s-G%s',ciudad,grupo),'jpg');
