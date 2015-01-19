@@ -1,4 +1,9 @@
-LOCALIDADES,Comitn de Domnguez,San Cristbal de las Casas,Tuxtla Gutirrez, 
-Comitn de Domnguez,0,91.419,177.394, 
-San Cristbal de las Casas,91.419,0,86.358, 
-Tuxtla Gutirrez,177.394,86.358,0, 
+LOCALIDADES,Comitn de Domnguez,San Cristbal de las Casas,Tuxtla Gutirrez, ,,,,
+Comitn de Domnguez,0,91.419,177.394, ,,,,
+San Cristbal de las Casas,91.419,0,86.358, ,,,,
+Tuxtla Gutirrez,177.394,86.358,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Comitn de Domnguez,San Cristbal de las Casas,Tuxtla Gutirrez,,LOCALIDADES,Comitn de Domnguez,San Cristbal de las Casas,Tuxtla Gutirrez
+Comitn de Domnguez,0,8.199,0,,Comitn de Domnguez,0,Presidente Echeverría-Ricardo Flores Magón,La conexión se construye por medio de las otras dos
+San Cristbal de las Casas,8.199,0,12.37,,San Cristbal de las Casas,Presidente Echeverría-Ricardo Flores Magón,0,Acala-Chiapilla
+Tuxtla Gutirrez,0,12.37,0,,Tuxtla Gutirrez,La conexión se construye por medio de las otras dos,Acala-Chiapilla,0

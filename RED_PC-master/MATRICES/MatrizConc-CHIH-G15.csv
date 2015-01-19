@@ -1,4 +1,9 @@
-LOCALIDADES,Delicias,Chihuahua,Jurez, 
-Delicias,0,97.55,446.297, 
-Chihuahua,97.55,0,350.672, 
-Jurez,446.297,350.672,0, 
+LOCALIDADES,Delicias,Chihuahua,Jurez, ,,,,
+Delicias,0,97.55,446.297, ,,,,
+Chihuahua,97.55,0,350.672, ,,,,
+Jurez,446.297,350.672,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Delicias,Chihuahua,Jurez,,LOCALIDADES,Delicias,Chihuahua,Jurez
+Delicias,0,49.447,0,,Delicias,0,Santa Eulalia-Lázaro Cárdenas,La conexión se da por las otras dos conexiones
+Chihuahua,49.447,0,25.639,,Chihuahua,Santa Eulalia-Lázaro Cárdenas,0,Ejido Benito Juárez-Flores Magón
+Jurez,0,25.639,0,,Jurez,La conexión se da por las otras dos conexiones,Ejido Benito Juárez-Flores Magón,0

@@ -1,4 +1,9 @@
-LOCALIDADES,Mapastepec,Frontera Comalapa,Tapachula de Crdova y Ordez, 
-Mapastepec,0,169.185,104.176, 
-Frontera Comalapa,169.185,0,145.233, 
-Tapachula de Crdova y Ordez,104.176,145.233,0, 
+LOCALIDADES,Mapastepec,Frontera Comalapa,Tapachula de Crdova y Ordez, ,,,,
+Mapastepec,0,169.185,104.176, ,,,,
+Frontera Comalapa,169.185,0,145.233, ,,,,
+Tapachula de Crdova y Ordez,104.176,145.233,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Mapastepec,Frontera Comalapa,Tapachula de Crdova y Ordez,,LOCALIDADES,Mapastepec,Frontera Comalapa,Tapachula de Crdova y Ordez
+Mapastepec,0,0,16.793,,Mapastepec,0,La conexión ya fue dada por las otras conexiones,Huixtla-Villa Comaltitlán
+Frontera Comalapa,0,0,53.092,,Frontera Comalapa,La conexión ya fue dada por las otras conexiones,0,Tuzantán-Motozintla de Mendoza
+Tapachula de Crdova y Ordez,16.793,53.092,0,,Tapachula de Crdova y Ordez,Huixtla-Villa Comaltitlán,Tuzantán-Motozintla de Mendoza,0

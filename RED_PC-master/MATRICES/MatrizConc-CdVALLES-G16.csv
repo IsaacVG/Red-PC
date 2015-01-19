@@ -1,4 +1,9 @@
-LOCALIDADES,Tamazunchale,Huejutla de Reyes,Ciudad Valles, 
-Tamazunchale,0,55.065,107.324, 
-Huejutla de Reyes,55.065,0,161.216, 
-Ciudad Valles,107.324,161.216,0, 
+LOCALIDADES,Tamazunchale,Huejutla de Reyes,Ciudad Valles, ,,,,
+Tamazunchale,0,55.065,107.324, ,,,,
+Huejutla de Reyes,55.065,0,161.216, ,,,,
+Ciudad Valles,107.324,161.216,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Tamazunchale,Huejutla de Reyes,Ciudad Valles,,LOCALIDADES,Tamazunchale,Huejutla de Reyes,Ciudad Valles
+Tamazunchale,0,10.898,14.883,,Tamazunchale,0,Orizatlán-Huitzitzilingo,Tancanhuitz-Coxcatlán
+Huejutla de Reyes,10.898,0,16.46,,Huejutla de Reyes,Orizatlán-Huitzitzilingo,0,San Vicente Tancuayalab-El Higo
+Ciudad Valles,14.883,16.46,0,,Ciudad Valles,Tancanhuitz-Coxcatlán,San Vicente Tancuayalab-El Higo,0

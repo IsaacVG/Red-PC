@@ -1,4 +1,9 @@
-LOCALIDADES,Jalpa,San Juan de los Lagos,Aguascalientes, 
-Jalpa,0,128.731,93.511, 
-San Juan de los Lagos,128.731,0,82.563, 
-Aguascalientes,93.511,82.563,0, 
+LOCALIDADES,Jalpa,San Juan de los Lagos,Aguascalientes, ,,,,
+Jalpa,0,128.731,93.511, ,,,,
+San Juan de los Lagos,128.731,0,82.563, ,,,,
+Aguascalientes,93.511,82.563,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Jalpa,San Juan de los Lagos,Aguascalientes,,LOCALIDADES,Jalpa,San Juan de los Lagos,Aguascalientes
+Jalpa,0,17.353,62.792,,Jalpa,0,Nochistlán de Mejía-Mexticacán,Villa Hidalgo-Ojocaliente
+San Juan de los Lagos,17.353,0,12.976,,San Juan de los Lagos,Nochistlán de Mejía-Mexticacán,0,Mesón de los Sauces-Bajío de San José
+Aguascalientes,62.792,12.976,0,,Aguascalientes,Villa Hidalgo-Ojocaliente,Mesón de los Sauces-Bajío de San José,0

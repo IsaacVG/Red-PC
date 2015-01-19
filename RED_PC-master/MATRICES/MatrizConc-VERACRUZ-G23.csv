@@ -1,4 +1,9 @@
-LOCALIDADES,Piedras Negras,Coatepec,Veracruz, 
-Piedras Negras,0,161.031,55.823, 
-Coatepec,161.031,0,119.716, 
-Veracruz,55.823,119.716,0, 
+LOCALIDADES,Piedras Negras,Coatepec,Veracruz, ,,,,
+Piedras Negras,0,161.031,55.823, ,,,,
+Coatepec,161.031,0,119.716, ,,,,
+Veracruz,55.823,119.716,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Piedras Negras,Coatepec,Veracruz,,LOCALIDADES,Piedras Negras,Coatepec,Veracruz
+Piedras Negras,0,107.385,29.264,,Piedras Negras,0,Piedras Negras-Boca del Monte,Tlaxicoyan-Los Robles
+Coatepec,107.385,0,24.594,,Coatepec,Piedras Negras-Boca del Monte,0,Mozomboa-Actopan
+Veracruz,29.264,24.594,0,,Veracruz,Tlaxicoyan-Los Robles,Mozomboa-Actopan,0

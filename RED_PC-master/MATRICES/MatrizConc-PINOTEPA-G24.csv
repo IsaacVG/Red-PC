@@ -1,4 +1,9 @@
-LOCALIDADES,Juchitn,Putla Villa de Guerrero,Santiago Pinotepa Nacional, 
-Juchitn,0,162.124,94.321, 
-Putla Villa de Guerrero,162.124,0,128.464, 
-Santiago Pinotepa Nacional,94.321,128.464,0, 
+LOCALIDADES,Juchitn,Putla Villa de Guerrero,Santiago Pinotepa Nacional, ,,,,
+Juchitn,0,162.124,94.321, ,,,,
+Putla Villa de Guerrero,162.124,0,128.464, ,,,,
+Santiago Pinotepa Nacional,94.321,128.464,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Juchitn,Putla Villa de Guerrero,Santiago Pinotepa Nacional,,LOCALIDADES,Juchitn,Putla Villa de Guerrero,Santiago Pinotepa Nacional
+Juchitn,0,52.165,13.246,,Juchitn,0,Xochistlahuaca-Santa María Zacatepec,Juajintepec-Huixtepec
+Putla Villa de Guerrero,52.165,0,23.324,,Putla Villa de Guerrero,Xochistlahuaca-Santa María Zacatepec,0,Santa María Zacatepec-San Pedro Amuzgos
+Santiago Pinotepa Nacional,13.246,23.324,0,,Santiago Pinotepa Nacional,Juajintepec-Huixtepec,Santa María Zacatepec-San Pedro Amuzgos,0

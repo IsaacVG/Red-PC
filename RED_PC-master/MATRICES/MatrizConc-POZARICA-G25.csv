@@ -1,5 +1,11 @@
-LOCALIDADES,Xicotepec de Jurez,Teziutln,Martnez de la Torre,Poza Rica de Hidalgo, 
-Xicotepec de Jurez,0,204.476,170.229,85.996, 
-Teziutln,204.476,0,54.955,128.62, 
-Martnez de la Torre,170.229,54.955,0,95.951, 
-Poza Rica de Hidalgo,85.996,128.62,95.951,0, 
+LOCALIDADES,Xicotepec de Jurez,Teziutln,Martnez de la Torre,Poza Rica de Hidalgo, ,,,,,
+Xicotepec de Jurez,0,204.476,170.229,85.996, ,,,,,
+Teziutln,204.476,0,54.955,128.62, ,,,,,
+Martnez de la Torre,170.229,54.955,0,95.951, ,,,,,
+Poza Rica de Hidalgo,85.996,128.62,95.951,0, ,,,,,
+,,,,,,,,,,
+LOCALIDADES,Xicotepec de Jurez,Teziutln,Martnez de la Torre,Poza Rica de Hidalgo,,LOCALIDADES,Xicotepec de Jurez,Teziutln,Martnez de la Torre,Poza Rica de Hidalgo
+Xicotepec de Jurez,0,15.888,0,27.72,,Xicotepec de Jurez,0,Tepango de Rodriguez-Amixtlán,La conexión ya está dada por las otras tres,Mecapalapa-Venustiano Carranza
+Teziutln,15.888,0,13.249,33.584,,Teziutln,Tepango de Rodriguez-Amixtlán,0,Hueytamalco-Tlapacoyan,Ixtepec-Xochitlán de Vicente Suárez
+Martnez de la Torre,0,13.249,0,42.119,,Martnez de la Torre,La conexión ya está dada por las otras tres,Hueytamalco-Tlapacoyan,0,Espinal-San José Acateno
+Poza Rica de Hidalgo,27.72,33.584,42.119,0,,Poza Rica de Hidalgo,Mecapalapa-Venustiano Carranza,Ixtepec-Xochitlán de Vicente Suárez,Espinal-San José Acateno,0

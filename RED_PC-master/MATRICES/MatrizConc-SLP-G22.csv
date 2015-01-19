@@ -1,4 +1,9 @@
-LOCALIDADES,Rioverde,Matehuala,San Luis Potos, 
-Rioverde,0,231.802,133.522, 
-Matehuala,231.802,0,196.448, 
-San Luis Potos,133.522,196.448,0, 
+LOCALIDADES,Rioverde,Matehuala,San Luis Potos, ,,,,
+Rioverde,0,231.802,133.522, ,,,,
+Matehuala,231.802,0,196.448, ,,,,
+San Luis Potos,133.522,196.448,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Rioverde,Matehuala,San Luis Potos,,LOCALIDADES,Rioverde,Matehuala,San Luis Potos
+Rioverde,0,140.1,59.192,,Rioverde,0,Ciudad Tula-Doctor Arroyo,Cerritos-Villa Hidalgo
+Matehuala,140.1,0,21.684,,Matehuala,Ciudad Tula-Doctor Arroyo,0,Moctezuma-Venado
+San Luis Potos,59.192,21.684,0,,San Luis Potos,Cerritos-Villa Hidalgo,Moctezuma-Venado,0
