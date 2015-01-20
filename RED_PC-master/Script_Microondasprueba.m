@@ -2,14 +2,20 @@ clear all
 close all
 clc
 
-cd C:/Users/isaac/Documents/GitHub/Red-PC/RED_PC-master/
-load MAT_CdOBREGON
-cd C:\Users\Isaac\Dropbox\RED_PC\EntregablesIvana\MatricesDistancias
+ciudad = 'MAZATLAN';
+grupo = '51';
+mat_ciudad = sprintf('MAT_%s',ciudad);
+nodes_ciudad = sprintf('nodes_%s',ciudad);
+dist_ciudad = sprintf('dist_%s',ciudad);
+nombre_matriz = sprintf('MATRICES/Matriz-%s-G%s.csv',ciudad,grupo);
 
+load(mat_ciudad)
+load MAT_fullDistance
 
-CSV_MATRIZ  = csvread('Matriz-CdObregon-G3.csv',1,1 );
+CSV_MATRIZ  = csvread(nombre_matriz,1,1 );
 nodes_MATRIZ  = CSV_MATRIZ(:,1);
-n_MATRIZ = length(nodes_CdOBREGON);
+eval(sprintf('n_MATRIZ  = length(%s)',nodes_ciudad));
+
 
 n_hoja=1;
 for i=1:n_MATRIZ
@@ -23,8 +29,8 @@ for i=1:n_MATRIZ
         end
     end
     if conteo==1
-        index_ult(n_hoja) = nodes_CdOBREGON(ult);
-        index_penult(n_hoja) = nodes_CdOBREGON(penult);
+        eval(sprintf('index_ult(n_hoja) = %s(ult)',nodes_ciudad));
+        eval(sprintf('index_penult(n_hoja) = %s(penult)',nodes_ciudad));
         carr_dist(n_hoja)=dist_carr;
         n_hoja = n_hoja + 1;
     else
@@ -35,27 +41,26 @@ for i=1:n_MATRIZ
     
 end
 
-cd C:/Users/isaac/Documents/GitHub/Red-PC/RED_PC-master/
-load MAT_fullDistance
-
 for i=1:n_hoja-1
     dist_recta(i) = D(index_ult(i),index_penult(i))*100;
-    grupo(i) = GROUPS_51(index_ult(i));
+    grupos(i) = GROUPS_51(index_ult(i));
     Nombre_ult(i) = NOMBRES(index_ult(i));
     Nombre_penult(i) = NOMBRES(index_penult(i));
 end
 dist_recta = dist_recta';
-grupo = grupo';
+grupos = grupos';
 Nombre_ult = Nombre_ult';
 Nombre_penult = Nombre_penult';
 index_ult = index_ult';
 index_penult = index_penult';
 carr_dist=carr_dist';
 
-all_info=[index_ult index_penult grupo carr_dist dist_recta]
+all_info=[index_ult index_penult grupos carr_dist dist_recta];
 
-save('MATmicroPRUEBA_CdOBREGON.mat','all_info','dist_recta','grupo','index_ult','index_penult','Nombre_ult','Nombre_penult','carr_dist')
-clear all
-load MATmicroPRUEBA_CdOBREGON.mat
-%load(sprintf('MATRICES/Micro/MATmicro_%s-G%s.mat',ciudad,grupo));
-%csvwrite(nombre_arch,dif_MATRIZ);
+% save('MATmicroPRUEBA_CdOBREGON.mat','all_info','dist_recta','grupos','index_ult','index_penult','Nombre_ult','Nombre_penult','carr_dist')
+% clear all
+% load MATmicroPRUEBA_CdOBREGON.mat
+
+nombre_arch = sprintf('MATRICES/Microonda/Microonda_%s-G%s.csv', ciudad, grupo);
+
+csvwrite(nombre_arch,all_info);
