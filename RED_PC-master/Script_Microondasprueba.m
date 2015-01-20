@@ -52,7 +52,9 @@ index_ult = index_ult';
 index_penult = index_penult';
 carr_dist=carr_dist';
 
-save('MATmicroPRUEBA_CdOBREGON.mat','dist_recta','grupo','index_ult','index_penult','Nombre_ult','Nombre_penult','carr_dist')
+all_info=[index_ult index_penult grupo carr_dist dist_recta]
+
+save('MATmicroPRUEBA_CdOBREGON.mat','all_info','dist_recta','grupo','index_ult','index_penult','Nombre_ult','Nombre_penult','carr_dist')
 clear all
 load MATmicroPRUEBA_CdOBREGON.mat
 %load(sprintf('MATRICES/Micro/MATmicro_%s-G%s.mat',ciudad,grupo));
