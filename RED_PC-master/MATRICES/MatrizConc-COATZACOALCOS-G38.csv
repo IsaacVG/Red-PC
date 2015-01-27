@@ -1,4 +1,9 @@
-LOCALIDADES,Acayucan,San Juan Bautista Tuxtepec,Coatzacoalcos, 
-Acayucan,0,172.021,63.428, 
-San Juan Bautista Tuxtepec,172.021,0,210.253, 
-Coatzacoalcos,63.428,210.253,0, 
+LOCALIDADES,Acayucan,San Juan Bautista Tuxtepec,Coatzacoalcos, ,,,,
+Acayucan,0,172.021,63.428, ,,,,
+San Juan Bautista Tuxtepec,172.021,0,210.253, ,,,,
+Coatzacoalcos,63.428,210.253,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Acayucan,San Juan Bautista Tuxtepec,Coatzacoalcos,,LOCALIDADES,Acayucan,San Juan Bautista Tuxtepec,Coatzacoalcos
+Acayucan,0,29.464,4.84,,Acayucan,0,Isla-Villa Azueta,Fraccionamiento Los Prados-San Pedro Martir
+San Juan Bautista Tuxtepec,29.464,0,0,,San Juan Bautista Tuxtepec,Isla-Villa Azueta,0,La conexión se da por Acayucan
+Coatzacoalcos,4.84,0,0,,Coatzacoalcos,Fraccionamiento Los Prados-San Pedro Martir,La conexión se da por Acayucan,0

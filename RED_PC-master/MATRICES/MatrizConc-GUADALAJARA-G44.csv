@@ -1,5 +1,11 @@
-LOCALIDADES,El Salto,Tala,Hacienda Santa Fe,Guadalajara, 
-El Salto,0,77.718,23.567,33.916, 
-Tala,77.718,0,63.58,50.749, 
-Hacienda Santa Fe,23.567,63.58,0,27.348, 
-Guadalajara,33.916,50.749,27.348,0, 
+LOCALIDADES,El Salto,Tala,Hacienda Santa Fe,Guadalajara, ,,,,,
+El Salto,0,77.718,23.567,33.916, ,,,,,
+Tala,77.718,0,63.58,50.749, ,,,,,
+Hacienda Santa Fe,23.567,63.58,0,27.348, ,,,,,
+Guadalajara,33.916,50.749,27.348,0, ,,,,,
+,,,,,,,,,,
+LOCALIDADES,El Salto,Tala,Hacienda Santa Fe,Guadalajara,,LOCALIDADES,El Salto,Tala,Hacienda Santa Fe,Guadalajara
+El Salto,0,0,7.877,3.252,,El Salto,0,La conexión puede darse por Hacienda Santa Fe,El Capulín-Fraccionamiento Rancho Alegre,Las Pintitas-San José el Verde
+Tala,0,0,6.78,7.605,,Tala,La conexión puede darse por Hacienda Santa Fe,0,Bella Vista-El Plan,Nextipac-Tesistán
+Hacienda Santa Fe,7.877,6.78,0,4.643,,Hacienda Santa Fe,El Capulín-Fraccionamiento Rancho Alegre,Bella Vista-El Plan,0,Las Pintas-Las Pintitas
+Guadalajara,3.252,7.605,4.643,0,,Guadalajara,Las Pintitas-San José el Verde,Nextipac-Tesistán,Las Pintas-Las Pintitas,0

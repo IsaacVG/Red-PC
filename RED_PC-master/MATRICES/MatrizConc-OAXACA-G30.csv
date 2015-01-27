@@ -1,1 +1,9 @@
-LOCALIDADES,Tlacolula de Matamoros,Ocotln de Morelos,Oaxaca de Jurez, Tlacolula de Matamoros,0,59.27,34.067, Ocotln de Morelos,59.27,0,36.767, Oaxaca de Jurez,34.067,36.767,0, ,,,,,Tlacolula de Matamoros,Ocotln de Morelos,Oaxaca de Jurez,Yaxe - San Pablo Guil,,16.261,,Tlacolula de MatamorosVicente Guerrero - Reyes Mantec—n,,,4.229,Ocotln de MorelosSan Mar’a de Tule - San Francisco Lachigol,10.724,,,Oaxaca de Jurez
+LOCALIDADES,Tlacolula de Matamoros,Ocotln de Morelos,Oaxaca de Jurez, ,,,,
+Tlacolula de Matamoros,0,59.27,34.067, ,,,,
+Ocotln de Morelos,59.27,0,36.767, ,,,,
+Oaxaca de Jurez,34.067,36.767,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Tlacolula de Matamoros,Ocotln de Morelos,Oaxaca de Jurez,,LOCALIDADES,Tlacolula de Matamoros,Ocotln de Morelos,Oaxaca de Jurez
+Tlacolula de Matamoros,0,16.261,10.724,,Tlacolula de Matamoros,0,San Pablo Guilá-Yaxe,Santa María del Tule-San Francisco Lachigolá
+Ocotln de Morelos,16.261,0,4.229,,Ocotln de Morelos,San Pablo Guilá-Yaxe,0,Reyes Mantecón-Vicente Guerrero
+Oaxaca de Jurez,10.724,4.229,0,,Oaxaca de Jurez,Santa María del Tule-San Francisco Lachigolá,Reyes Mantecón-Vicente Guerrero,0

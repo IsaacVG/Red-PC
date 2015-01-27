@@ -1,4 +1,9 @@
-LOCALIDADES,Ojocaliente,Fresnillo,Zacatecas, 
-Ojocaliente,0,105.038,49.809, 
-Fresnillo,105.038,0,61.439, 
-Zacatecas,49.809,61.439,0, 
+LOCALIDADES,Ojocaliente,Fresnillo,Zacatecas, ,,,,
+Ojocaliente,0,105.038,49.809, ,,,,
+Fresnillo,105.038,0,61.439, ,,,,
+Zacatecas,49.809,61.439,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Ojocaliente,Fresnillo,Zacatecas,,LOCALIDADES,Ojocaliente,Fresnillo,Zacatecas
+Ojocaliente,0,11.897,14.869,,Ojocaliente,0,Chaparrosa-Chupaderos,El Barril-Chaparrosa
+Fresnillo,11.897,0,7.307,,Fresnillo,Chaparrosa-Chupaderos,0,General Enrique Estrada-Victor Rosales
+Zacatecas,14.869,7.307,0,,Zacatecas,El Barril-Chaparrosa,General Enrique Estrada-Victor Rosales,0

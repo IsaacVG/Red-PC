@@ -1,4 +1,9 @@
-LOCALIDADES,Acmbaro,Salamanca,Celaya, 
-Acmbaro,0,96.435,74.442, 
-Salamanca,96.435,0,47.851, 
-Celaya,74.442,47.851,0, 
+LOCALIDADES,Acmbaro,Salamanca,Celaya, ,,,,
+Acmbaro,0,96.435,74.442, ,,,,
+Salamanca,96.435,0,47.851, ,,,,
+Celaya,74.442,47.851,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Acmbaro,Salamanca,Celaya,,LOCALIDADES,Acmbaro,Salamanca,Celaya
+Acmbaro,0,5.994,3.543,,Acmbaro,0,Santiago Capitiro-Victoria de Cortazar,El Sabino-Santiago Capitiro
+Salamanca,5.994,0,0,,Salamanca,Santiago Capitiro-Victoria de Cortazar,0,La conexión se forma por Celaya
+Celaya,3.543,0,0,,Celaya,El Sabino-Santiago Capitiro,La conexión se forma por Celaya,0

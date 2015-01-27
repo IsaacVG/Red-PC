@@ -1,1 +1,9 @@
-LOCALIDADES,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo, ,,,,,San Juan Yautepec,0,91.318,36.366, ,,,,,Ixtapan de la Sal,91.318,0,67.998, ,,,,,Toluca de Lerdo,36.366,67.998,0, ,,,,,,,,,,,,,,LOCALIDADES,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo,,,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo,San Juan Yautepec,0,91.318,36.366,,San Mart’n Coapaxtongo - Guadalupe Yancuictlalpan,,33.371,,San Juan YautepecIxtapan de la Sal,91.318,0,67.998,,San Pedro Tlanixco - San Miguel Balderas,,,20.51,Ixtapan de la SalToluca de Lerdo,36.366,67.998,0,,Santiago Analco-San Juan Yautepec,26.383,,,Toluca de LerdoSantiago Analco,26.383,,23.887,,,,,,
+LOCALIDADES,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo, ,,,,
+San Juan Yautepec,0,91.318,36.366, ,,,,
+Ixtapan de la Sal,91.318,0,67.998, ,,,,
+Toluca de Lerdo,36.366,67.998,0, ,,,,
+,,,,,,,,
+LOCALIDADES,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo,,,San Juan Yautepec,Ixtapan de la Sal,Toluca de Lerdo
+San Juan Yautepec,0,18.614,2.046,,San Juan Yautepec,,Santa Mónica- San Simón el Alto,Santa María Atarasquillo-San Mateo Atarasquillo
+Ixtapan de la Sal,18.614,0,8.534,,Ixtapan de la Sal,Santa Mónica- San Simón el Alto,,San Pedro Tlanixco-San Bartolomé Atlatlahuca
+Toluca de Lerdo,2.046,8.534,0,,Toluca de Lerdo,Santa María Atarasquillo-San Mateo Atarasquillo,San Pedro Tlanixco-San Bartolomé Atlatlahuca,

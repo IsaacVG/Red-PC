@@ -1,4 +1,9 @@
-LOCALIDADES,Actopan,Tepeji de Ocampo,Ixmiquilpan, 
-Actopan,0,75.471,40.935, 
-Tepeji de Ocampo,75.471,0,80.814, 
-Ixmiquilpan,40.935,80.814,0, 
+LOCALIDADES,Actopan,Tepeji de Ocampo,Ixmiquilpan, ,,,,
+Actopan,0,75.471,40.935, ,,,,
+Tepeji de Ocampo,75.471,0,80.814, ,,,,
+Ixmiquilpan,40.935,80.814,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Actopan,Tepeji de Ocampo,Ixmiquilpan,,LOCALIDADES,Actopan,Tepeji de Ocampo,Ixmiquilpan
+Actopan,0,1.579,28.781,,Actopan,0,Panuaya-Tezontepec de Aldama,El Tephe-Caxuxi
+Tepeji de Ocampo,1.579,0,27.562,,Tepeji de Ocampo,Panuaya-Tezontepec de Aldama,0,Polotitlán de la Ilustración-San José de Atlán
+Ixmiquilpan,28.781,27.562,0,,Ixmiquilpan,El Tephe-Caxuxi,Polotitlán de la Ilustración-San José de Atlán,0

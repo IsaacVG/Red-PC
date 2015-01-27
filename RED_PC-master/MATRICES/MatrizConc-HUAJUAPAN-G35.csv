@@ -1,1 +1,9 @@
-LOCALIDADES,Ciudad Serdn,Tepeaca,Heroica Ciudad de Huajuapan de Len, Ciudad Serdn,0,74.975,194.245, Tepeaca,74.975,0,169.164, Heroica Ciudad de Huajuapan de Len,194.245,169.164,0, ,,,,,,,,,Ciudad Serdn,Tepeaca,Heroica Ciudad de Huajuapan de Len,,,,,Ciudad Serdn,,,,Tepeaca,,,,Heroica Ciudad de Huajuapan de Len
+LOCALIDADES,Ciudad Serdn,Tepeaca,Heroica Ciudad de Huajuapan de Len, ,,,,
+Ciudad Serdn,0,74.975,194.245, ,,,,
+Tepeaca,74.975,0,169.164, ,,,,
+Heroica Ciudad de Huajuapan de Len,194.245,169.164,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Ciudad Serdn,Tepeaca,Heroica Ciudad de Huajuapan de Len,,LOCALIDADES,Ciudad Serdn,Tepeaca,Heroica Ciudad de Huajuapan de Len
+Ciudad Serdn,0,5.564,0,,Ciudad Serdn,0,Magdalena Cuayucatepec-Santiago Mihuatlán,La conexión se forma mediante Tepeaca
+Tepeaca,5.564,0,26.631,,Tepeaca,Magdalena Cuayucatepec-Santiago Mihuatlán,0,San Vicente Boquerón-Santa Inés Ahuatempan
+Heroica Ciudad de Huajuapan de Len,0,26.631,0,,Heroica Ciudad de Huajuapan de Len,La conexión se forma mediante Tepeaca,San Vicente Boquerón-Santa Inés Ahuatempan,0

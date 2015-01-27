@@ -1,4 +1,9 @@
-LOCALIDADES,Tierra Blanca,Crdoba,Tehuacn, 
-Tierra Blanca,0,98.502,186.71, 
-Crdoba,98.502,0,93.297, 
-Tehuacn,186.71,93.297,0, 
+LOCALIDADES,Tierra Blanca,Crdoba,Tehuacn, ,,,,
+Tierra Blanca,0,98.502,186.71, ,,,,
+Crdoba,98.502,0,93.297, ,,,,
+Tehuacn,186.71,93.297,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Tierra Blanca,Crdoba,Tehuacn,,LOCALIDADES,Tierra Blanca,Crdoba,Tehuacn
+Tierra Blanca,0,2.011,59.338,,Tierra Blanca,0,Tezonapa-Cosolapa,San Bartolomé Ayautla-San Felipe Jalapa de Diaz
+Crdoba,2.011,0,22.548,,Crdoba,Tezonapa-Cosolapa,0,Acultzingo-Atzompa
+Tehuacn,59.338,22.548,0,,Tehuacn,San Bartolomé Ayautla-San Felipe Jalapa de Diaz,Acultzingo-Atzompa,0

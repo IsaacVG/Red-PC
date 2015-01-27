@@ -1,5 +1,11 @@
-LOCALIDADES,Paraso,Agua Dulce,Crdenas,Villahermosa, 
-Paraso,0,153.832,59.826,74.657, 
-Agua Dulce,153.832,0,93.364,139.159, 
-Crdenas,59.826,93.364,0,47.43, 
-Villahermosa,74.657,139.159,47.43,0, 
+LOCALIDADES,Paraso,Agua Dulce,Crdenas,Villahermosa, ,,,,,
+Paraso,0,153.832,59.826,74.657, ,,,,,
+Agua Dulce,153.832,0,93.364,139.159, ,,,,,
+Crdenas,59.826,93.364,0,47.43, ,,,,,
+Villahermosa,74.657,139.159,47.43,0, ,,,,,
+,,,,,,,,,,
+LOCALIDADES,Paraso,Agua Dulce,Crdenas,Villahermosa,,LOCALIDADES,Paraso,Agua Dulce,Crdenas,Villahermosa
+Paraso,0,0,6.392,3.576,,Paraso,0,La conexión se da por Cárdenas,Aldama-Arena 1ra. Sección,El Río-Jalpa de Méndez
+Agua Dulce,0,0,34.666,139.159,,Agua Dulce,La conexión se da por Cárdenas,0,Campo Magallanes-Poblado C-23,139.159
+Crdenas,6.392,34.666,0,30.086,,Crdenas,Aldama-Arena 1ra. Sección,Campo Magallanes-Poblado C-23,0,Cucuyulapa-Reforma
+Villahermosa,3.576,139.159,30.086,0,,Villahermosa,El Río-Jalpa de Méndez,139.159,Cucuyulapa-Reforma,0

@@ -1,1 +1,11 @@
-LOCALIDADES,Linares,Ciudad Apodaca,Reynosa,Monterrey, Linares,0,146.866,292.346,125.911, Ciudad Apodaca,146.866,0,213.08,19.793, Reynosa,292.346,213.08,0,220.094, Monterrey,125.911,19.793,220.094,0, ,,,,,,,,,,,Linares,Ciudad Apodaca,Reynosa,Monterrey,China - Cerralvo,,,,,LinaresLas Escobas - Guadalupe,,,73.08,9.767,Ciudad ApodacaChina - Ciudad General Ter‡n,75.155,,,,ReynosaMontemorelos - Ciudad de Allende,24.404,,,,Monterrey
+LOCALIDADES,Linares,Ciudad Apodaca,Reynosa,Monterrey, ,,,,,
+Linares,0,146.866,292.346,125.911, ,,,,,
+Ciudad Apodaca,146.866,0,213.08,19.793, ,,,,,
+Reynosa,292.346,213.08,0,220.094, ,,,,,
+Monterrey,125.911,19.793,220.094,0, ,,,,,
+,,,,,,,,,,
+LOCALIDADES,Linares,Ciudad Apodaca,Reynosa,Monterrey,,LOCALIDADES,Linares,Ciudad Apodaca,Reynosa,Monterrey
+Linares,0,0,75.155,24.404,,Linares,0,La conexión es por Monterrey,China-Ciudad General Terán,Montemorelos-Ciudad de Allende
+Ciudad Apodaca,0,0,73.08,9.767,,Ciudad Apodaca,La conexión es por Monterrey,0,China-Ciudad Cerralvo,Guadalupe-Las Escobas
+Reynosa,75.155,73.08,0,0,,Reynosa,China-Ciudad General Terán,China-Ciudad Cerralvo,0,La conexión se da por medio de Cd. Apodaca
+Monterrey,24.404,9.767,0,0,,Monterrey,Montemorelos-Ciudad de Allende,Guadalupe-Las Escobas,La conexión se da por medio de Cd. Apodaca,0

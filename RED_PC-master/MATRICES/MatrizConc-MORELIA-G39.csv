@@ -1,4 +1,9 @@
-LOCALIDADES,Zacapu,Uruapan,Morelia, 
-Zacapu,0,102.186,80.491, 
-Uruapan,102.186,0,107.84, 
-Morelia,80.491,107.84,0, 
+LOCALIDADES,Zacapu,Uruapan,Morelia, ,,,,
+Zacapu,0,102.186,80.491, ,,,,
+Uruapan,102.186,0,107.84, ,,,,
+Morelia,80.491,107.84,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Zacapu,Uruapan,Morelia,,LOCALIDADES,Zacapu,Uruapan,Morelia
+Zacapu,0,5.809,4.566,,Zacapu,0,Cherín-Nahuatzen,Quiroga-Santa Fe de la Laguna
+Uruapan,5.809,0,6.176,,Uruapan,Cherín-Nahuatzen,0,Santa Clara del Cobre-Opopeo
+Morelia,4.566,6.176,0,,Morelia,Quiroga-Santa Fe de la Laguna,Santa Clara del Cobre-Opopeo,0

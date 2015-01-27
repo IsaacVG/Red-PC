@@ -1,4 +1,9 @@
-LOCALIDADES,La Piedad de Cabadas,Ocotln,Zamora de Hidalgo, 
-La Piedad de Cabadas,0,104.784,54.971, 
-Ocotln,104.784,0,86.822, 
-Zamora de Hidalgo,54.971,86.822,0, 
+LOCALIDADES,La Piedad de Cabadas,Ocotln,Zamora de Hidalgo, ,,,,
+La Piedad de Cabadas,0,104.784,54.971, ,,,,
+Ocotln,104.784,0,86.822, ,,,,
+Zamora de Hidalgo,54.971,86.822,0, ,,,,
+,,,,,,,,
+LOCALIDADES,La Piedad de Cabadas,Ocotln,Zamora de Hidalgo,,LOCALIDADES,La Piedad de Cabadas,Ocotln,Zamora de Hidalgo
+La Piedad de Cabadas,0,36.645,18.449,,La Piedad de Cabadas,0,Betania-Ayotlán,Ecuandureo-Churintzio
+Ocotln,36.645,0,7.239,,Ocotln,Betania-Ayotlán,0,Fraccionamiento San Miguel-Jiquilpan de Juárez
+Zamora de Hidalgo,18.449,7.239,0,,Zamora de Hidalgo,Ecuandureo-Churintzio,Fraccionamiento San Miguel-Jiquilpan de Juárez,0

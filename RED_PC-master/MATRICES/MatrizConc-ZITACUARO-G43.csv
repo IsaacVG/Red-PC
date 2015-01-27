@@ -1,4 +1,9 @@
-LOCALIDADES,Atlacomulco de Fabela,Maravato de Ocampo,Herica Zitcuaro, 
-Atlacomulco de Fabela,0,67.067,127.295, 
-Maravato de Ocampo,67.067,0,73.511, 
-Herica Zitcuaro,127.295,73.511,0, 
+LOCALIDADES,Atlacomulco de Fabela,Maravato de Ocampo,Herica Zitcuaro, ,,,,
+Atlacomulco de Fabela,0,67.067,127.295, ,,,,
+Maravato de Ocampo,67.067,0,73.511, ,,,,
+Herica Zitcuaro,127.295,73.511,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Atlacomulco de Fabela,Maravato de Ocampo,Herica Zitcuaro,,LOCALIDADES,Atlacomulco de Fabela,Maravato de Ocampo,Herica Zitcuaro
+Atlacomulco de Fabela,0,9.611,19.071,,Atlacomulco de Fabela,0,Tlalpujahua de Rayón-El Oro de Hidalgo,Villa Victoria-Sitio Ejido
+Maravato de Ocampo,9.611,0,15.805,,Maravato de Ocampo,Tlalpujahua de Rayón-El Oro de Hidalgo,0,Tuxpan-San Lorenzo Querendaro
+Herica Zitcuaro,19.071,15.805,0,,Herica Zitcuaro,Villa Victoria-Sitio Ejido,Tuxpan-San Lorenzo Querendaro,0

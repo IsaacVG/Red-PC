@@ -1,1 +1,9 @@
-LOCALIDADES,Macuspana,Palenque,Ciudad del Carmen, Macuspana,0,97.116,223.814, Palenque,97.116,0,316.601, Ciudad del Carmen,223.814,316.601,0, ,,,,,,,,,Macuspana,Palenque,Ciudad del Carmen,Palizada - Nuevo Progreso,,,174.166,MacuspanaBachajn - Chiln,13.732,,,PalenqueIsla Aguada - Candelaria,,162.354,,Ciudad del Carmen
+LOCALIDADES,Macuspana,Palenque,Ciudad del Carmen, ,,,,
+Macuspana,0,97.116,223.814, ,,,,
+Palenque,97.116,0,316.601, ,,,,
+Ciudad del Carmen,223.814,316.601,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Macuspana,Palenque,Ciudad del Carmen,,LOCALIDADES,Macuspana,Palenque,Ciudad del Carmen
+Macuspana,0,13.732,149.237,,Macuspana,0,Chilón-Bachajón,Nuevo Progreso-Jonuta
+Palenque,13.732,0,0,,Palenque,Chilón-Bachajón,0,La conexión se da por Macuspana
+Ciudad del Carmen,149.237,0,0,,Ciudad del Carmen,Nuevo Progreso-Jonuta,La conexión se da por Macuspana,0

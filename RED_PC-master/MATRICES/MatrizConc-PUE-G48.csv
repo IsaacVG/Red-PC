@@ -1,4 +1,9 @@
-LOCALIDADES,Huamantla,San Martn Texmelucan de Labastida,Herica Puebla de Zaragoza, 
-Huamantla,0,65.399,54.94, 
-San Martn Texmelucan de Labastida,65.399,0,45.717, 
-Herica Puebla de Zaragoza,54.94,45.717,0, 
+LOCALIDADES,Huamantla,San Martn Texmelucan de Labastida,Herica Puebla de Zaragoza, ,,,,
+Huamantla,0,65.399,54.94, ,,,,
+San Martn Texmelucan de Labastida,65.399,0,45.717, ,,,,
+Herica Puebla de Zaragoza,54.94,45.717,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Huamantla,San Martn Texmelucan de Labastida,Herica Puebla de Zaragoza,,LOCALIDADES,Huamantla,San Martn Texmelucan de Labastida,Herica Puebla de Zaragoza
+Huamantla,0,3.795,3.638,,Huamantla,0,Contla-Apetatitlán,San Pedro Muñoztla-La Magdalena Tlaltelulco
+San Martn Texmelucan de Labastida,3.795,0,2.706,,San Martn Texmelucan de Labastida,Contla-Apetatitlán,0,San Juan Huactzinco-San Jerónimo Zacualpan
+Herica Puebla de Zaragoza,3.638,2.706,0,,Herica Puebla de Zaragoza,San Pedro Muñoztla-La Magdalena Tlaltelulco,San Juan Huactzinco-San Jerónimo Zacualpan,0

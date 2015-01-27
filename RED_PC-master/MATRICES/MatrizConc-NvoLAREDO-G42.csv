@@ -1,4 +1,9 @@
-LOCALIDADES,Ciudad Acua,Monclova,Nuevo Laredo, 
-Ciudad Acua,0,298.15,270.001, 
-Monclova,298.15,0,379.483, 
-Nuevo Laredo,270.001,379.483,0, 
+LOCALIDADES,Ciudad Acua,Monclova,Nuevo Laredo, ,,,,
+Ciudad Acua,0,298.15,270.001, ,,,,
+Monclova,298.15,0,379.483, ,,,,
+Nuevo Laredo,270.001,379.483,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Ciudad Acua,Monclova,Nuevo Laredo,,LOCALIDADES,Ciudad Acua,Monclova,Nuevo Laredo
+Ciudad Acua,0,68.888,173.12,,Ciudad Acua,0,Allende-Sabinas,Villa Union-El Campanario y Oradel
+Monclova,68.888,0,135.739,,Monclova,Allende-Sabinas,0,Monclova-Lampazos de Naranjo
+Nuevo Laredo,173.12,135.739,0,,Nuevo Laredo,Villa Union-El Campanario y Oradel,Monclova-Lampazos de Naranjo,0

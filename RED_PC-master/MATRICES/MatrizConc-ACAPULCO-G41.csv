@@ -1,4 +1,9 @@
-LOCALIDADES,San Marcos,Chilpancingo de los Bravo,Acapulco de Jurez, 
-San Marcos,0,154.099,59.651, 
-Chilpancingo de los Bravo,154.099,0,107.653, 
-Acapulco de Jurez,59.651,107.653,0, 
+LOCALIDADES,San Marcos,Chilpancingo de los Bravo,Acapulco de Jurez, ,,,,
+San Marcos,0,154.099,59.651, ,,,,
+Chilpancingo de los Bravo,154.099,0,107.653, ,,,,
+Acapulco de Jurez,59.651,107.653,0, ,,,,
+,,,,,,,,
+LOCALIDADES,San Marcos,Chilpancingo de los Bravo,Acapulco de Jurez,,LOCALIDADES,San Marcos,Chilpancingo de los Bravo,Acapulco de Jurez
+San Marcos,0,46.208,38.463,,San Marcos,0,Las Mesas-Tierra Colorada,San Marcos-Amatillo
+Chilpancingo de los Bravo,46.208,0,64.262,,Chilpancingo de los Bravo,Las Mesas-Tierra Colorada,0,Xaltianguis-Las Mesas
+Acapulco de Jurez,38.463,64.262,0,,Acapulco de Jurez,San Marcos-Amatillo,Xaltianguis-Las Mesas,0

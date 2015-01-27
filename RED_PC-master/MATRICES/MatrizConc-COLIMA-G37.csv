@@ -1,4 +1,9 @@
-LOCALIDADES,Autln de Navarro,Ciudad Guzmn,Colima, 
-Autln de Navarro,0,115.268,179.801, 
-Ciudad Guzmn,115.268,0,79.527, 
-Colima,179.801,79.527,0, 
+LOCALIDADES,Autln de Navarro,Ciudad Guzmn,Colima, ,,,,
+Autln de Navarro,0,115.268,179.801, ,,,,
+Ciudad Guzmn,115.268,0,79.527, ,,,,
+Colima,179.801,79.527,0, ,,,,
+,,,,,,,,
+LOCALIDADES,Autln de Navarro,Ciudad Guzmn,Colima,,LOCALIDADES,Autln de Navarro,Ciudad Guzmn,Colima
+Autln de Navarro,0,32.645,68.904,,Autln de Navarro,0,Tonaya-San Gabriel,Cuautitlán de García Barragán-Minatitlán
+Ciudad Guzmn,32.645,0,37.285,,Ciudad Guzmn,Tonaya-San Gabriel,0,San Marcos-Tuxpan
+Colima,68.904,37.285,0,,Colima,Cuautitlán de García Barragán-Minatitlán,San Marcos-Tuxpan,0
