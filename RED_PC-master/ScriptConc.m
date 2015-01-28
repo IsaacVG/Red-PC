@@ -1,7 +1,7 @@
 %Para convertir el .MAT al .csv
 
-ciudad = 'POZARICA';
-grupo = '25';
+ciudad = 'TEHUACAN';
+grupo = '50';
 mat_ciudad = sprintf('MAT_%s',ciudad);
 nodes_ciudad = sprintf('nodes_%s',ciudad);
 dist_ciudad = sprintf('dist_%s',ciudad);
